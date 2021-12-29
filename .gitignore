@@ -1,3 +1,7 @@
+#Ignore csv files with data
+Suspension_Coil.csv
+MechaCar_mpg.csv
+
 # History files
 .Rhistory
 .Rapp.history
