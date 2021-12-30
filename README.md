@@ -1,5 +1,5 @@
 # MechaCar_Statistical_Analysis
-R Analysis of AutoRUs' newest Prototype to identify insights in manufacturing issues. 
+R Analysis of AutoRUs' newest MechaCar Prototype to identify insights in manufacturing issues. 
 
 
 # Deliverables
@@ -24,7 +24,7 @@ As with any linear model, there is some ability to predict mpg based on the line
 
 ### The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
-When all of the data is analyzed together, the variance of the coils is less than 100 pounds per inc and appear to pass the manufacturing specifications. When we separate the 3 different lots and analyze the variance of each separately, we find that lot 1 and lot 2 are well within the limits of 100 pounds per (variance = 0.98 and 2.73 respectively).
+When all of the data is analyzed together, the variance of the coils is less than 100 pounds per inch and appear to pass the manufacturing specifications. When we separate the 3 different lots and analyze the variance of each separately, we find that lot 1 and lot 2 are well within the limits of 100 pounds per (variance = 0.98 and 2.73 respectively).
 
 ![Mean_total.png](Resources/Mean_total.png)
 
@@ -45,19 +45,59 @@ After separating the Suspension Coil data into groups based on the lot number, w
 
 ![t_test_Lot2.png](Resources/t_test_Lot2.png)
 
-Lot 3 however had a mean of 1496.14, which had a p-value of 0.042 which is less than 0.05, indicating that the mean is outside of 2 standard deviation from the population mean, is significantly smaller than the population mean, and can be considered an outlier. This indicated that further analysis should be done to see why Lot 3 is outside of the normal range for the average PSI.  
+Lot 3 however had a mean of 1496.14, which had a p-value of 0.042 which is less than 0.05, indicating that the mean is outside of 2 standard deviations from the population mean, is significantly smaller than the population mean, and can be considered an outlier. This indicated that further analysis should be done to see why Lot 3 is outside of the normal range for the average PSI.  
 
 ![t_test_Lot3.png](Resources/t_test_Lot3.png)
 
 
 ## Deliverable 4: Design a Study Comparing the MechaCar to the Competition
 
-### Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
+### Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horsepower, maintenance cost, or safety rating.
 
-In your description, address the following questions:
+In order to compare the performance of MechaCar against their competition, there are many things that should be considered. What criteria you want to compare would depend on what your expected outcome might be. If you believe that MechaCar will be a more affordable vehicle than other cars in similar categories then you could focus on initial price, average mpg and maintenance costs (ongoing costs), and resale values after a set period of time. If you want to compare the performance of MechaCar against similar vehicles, you could compare acceleration time to 60mph, horsepower, stopping power, responsiveness, etc. For my study I will focus on the affordability of MechaCar when compared to other similar vehicles. 
 
-- What metric or metrics are you going to test?
-- What is the null hypothesis or alternative hypothesis?
-- What statistical test would you use to test the hypothesis? And why?
-- What data is needed to run the statistical test?
+#### What metric or metrics are you going to test?
+- I will compare the average purchase price of MechaCar against similar vehicles from other manufacturers. I will also compare the annual cost of maintenance, and the average miles per gallon (both highway and city). Then I will look at the average resale value of the vehicles 5 years after manufacture date. 
+
+#### What is the null hypothesis or alternative hypothesis?
+Test 1 
+Null-1 : There is no difference in the average purchase price of a MechaCar and other similar vehicles. 
+Alternative-1: The average purchase price of a MechaCar is significantly lower than that of similar vehicles. 
+
+Test 2 
+Null-2 : There is no difference in the annual maintenance costs of MechaCar and similar vehicles. 
+Alterntive-2 : There is a difference in the annual maintenance costs of MechaCar and similar vehicles.
+
+Test 3
+Null-3 : There is no difference in the average mpg of MechaCar and average mpg of similar vehicles. 
+Alterntive-3 : There is no difference in the average mpg of MechaCar and average mpg of similar vehicles.
+
+Test 4
+Null-4 : There is no difference in the average resale price of a MechaCar and other similar vehicles at 5 years after the date of manufacture. 
+Alternative-4: The average purchase resale price of a MechaCar is significantly higher than that of similar vehicles at 5 years after the date of manufacture. 
+
+#### What statistical test would you use to test the hypothesis? And why?
+Test 1 - One way T-Test if compared to one other vehicle since there is a directional hypothesis (MechaCar is lower). 
+        - If you wanted to compart to 2 or more vehicles you would want to do an ANOVA with Post hoc tests to identify specific differences in groups. 
+        
+Test 2 - Regular T-Test if compared to one other vehicle since there is not a directional hypothesis. 
+        - If you wanted to compart to 2 or more vehicles you would want to do an ANOVA with Post hoc tests to identify specific differences in groups. 
+
+Test 3 - Regular T-Test if compared to one other vehicle since there is not a directional hypothesis. 
+        - If you wanted to compart to 2 or more vehicles you would want to do an ANOVA with Post hoc tests to identify specific differences in groups. 
+
+Test 4 - One way T-Test if compared to one other vehicle since there is a directional hypothesis (MechaCar is higher). 
+        - If you wanted to compart to 2 or more vehicles you would want to do an ANOVA with Post hoc tests to identify specific differences in groups. 
+
+### What data is needed to run the statistical test?
+For these statistical tests I will need the following data: 
+Test 1 - Average purchase price for MechaCar and other similar vehicles. Ideally this would be a large dataset that is pulling data from dealerships in all 50 states. 
+
+Test 2 - Average maintenance price for MechaCar and other similar vehicles. Ideally this would be a large dataset that is pulling data from dealerships, auto shops, or research groups that represent all 50 states. 
+
+Test 3 - Average mpg for MechaCar and other similar vehicles. Ideally this would be for both average city mpg and highway mpg. This could be pulled from the manufacturers though that may not be as accurate as generating the data with large samples of vehicles. 
+
+Test 4 - Average resale value price for MechaCar and other similar vehicles. Ideally this would be a large dataset that is pulling data from dealerships, Kelly bluebook, craigslist, and other car resale sites in all 50 states.
+
+
 
