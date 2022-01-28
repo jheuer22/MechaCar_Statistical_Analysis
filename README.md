@@ -60,21 +60,21 @@ In order to compare the performance of MechaCar against their competition, there
 - I will compare the average purchase price of MechaCar against similar vehicles from other manufacturers. I will also compare the annual cost of maintenance, and the average miles per gallon (both highway and city). Then I will look at the average resale value of the vehicles 5 years after manufacture date. 
 
 #### What is the null hypothesis or alternative hypothesis?
-Test 1 
-Null-1 : There is no difference in the average purchase price of a MechaCar and other similar vehicles. 
-Alternative-1: The average purchase price of a MechaCar is significantly lower than that of similar vehicles. 
+        - Test 1 
+                - Null-1 : There is no difference in the average purchase price of a MechaCar and other similar vehicles. 
+                - Alternative-1 : The average purchase price of a MechaCar is significantly lower than that of similar vehicles. 
 
-Test 2 
-Null-2 : There is no difference in the annual maintenance costs of MechaCar and similar vehicles. 
-Alterntive-2 : There is a difference in the annual maintenance costs of MechaCar and similar vehicles.
+        - Test 2 
+                - Null-2 : There is no difference in the annual maintenance costs of MechaCar and similar vehicles. 
+                - Alterntive-2 : There is a difference in the annual maintenance costs of MechaCar and similar vehicles.
 
-Test 3
-Null-3 : There is no difference in the average mpg of MechaCar and average mpg of similar vehicles. 
-Alterntive-3 : There is no difference in the average mpg of MechaCar and average mpg of similar vehicles.
+        - Test 3
+                - Null-3 : There is no difference in the average mpg of MechaCar and average mpg of similar vehicles. 
+                - Alterntive-3 : There is no difference in the average mpg of MechaCar and average mpg of similar vehicles.
 
-Test 4
-Null-4 : There is no difference in the average resale price of a MechaCar and other similar vehicles at 5 years after the date of manufacture. 
-Alternative-4: The average purchase resale price of a MechaCar is significantly higher than that of similar vehicles at 5 years after the date of manufacture. 
+        - Test 4
+                - Null-4 : There is no difference in the average resale price of a MechaCar and other similar vehicles at 5 years after the date of manufacture. 
+                - Alternative-4 : The average purchase resale price of a MechaCar is significantly higher than that of similar vehicles at 5 years after the date of manufacture. 
 
 #### What statistical test would you use to test the hypothesis? And why?
 Test 1 - One way T-Test if compared to one other vehicle since there is a directional hypothesis (MechaCar is lower). 
